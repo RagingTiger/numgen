@@ -18,9 +18,8 @@ def recurse_factory(level, n):
     # return factory recurse function
     return recurse_combi       
 
-def ssgen(n, k):
+def numgen(n, k):
     # initial setup
-    
     start = ''.join(list('0' * k))
 
     # build recurse
@@ -33,4 +32,4 @@ def ssgen(n, k):
 # executable
 if __name__ == '__main__':
     import sys
-    ssgen(int(sys.argv[1]), int(sys.argv[2]))
+    numgen(int(sys.argv[1]), int(sys.argv[2]))
