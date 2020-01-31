@@ -11,7 +11,7 @@ $ docker build -t numgen .
 
 ### Run
 ```
-$ NUMGEN_NVAL=10; NUMGEN_KVAL=9
+$ NUMGEN_NVAL=10; NUMGEN_KVAL=2
 $ docker run -d \
              --name numgen.$(date +%m%d%y%H%M%S) \
              -v $PWD:/home/numgen \
