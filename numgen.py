@@ -8,8 +8,8 @@ def recurse_factory(level, n):
     def recurse_combi(number, k):
         # check level
         if k is level:
-           print(number)
-           return
+            print(number)
+            return
         
         # start recurse
         for i in range(n):
@@ -19,7 +19,12 @@ def recurse_factory(level, n):
     return recurse_combi       
 
 def numgen(n, k):
-    # initial setup
+    # check n length
+    if n > 10:
+        print('Maximum value of n is 10. Please try again.')
+        return 1
+
+    # starting string
     start = ''.join(list('0' * k))
 
     # build recurse
