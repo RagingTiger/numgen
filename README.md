@@ -17,6 +17,7 @@ $ docker run -d \
              -v $PWD:/home/numgen \
              -it tigerj/numgen ash \
              -c "time python /usr/src/numgen.py $NUMGEN_NVAL $NUMGEN_KVAL > output.$(date +%m%d%y%H%M%S).txt"
+```
 
 ### Logs
 ```
